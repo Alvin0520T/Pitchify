@@ -7,42 +7,140 @@
     android:background="#E1FBFF">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/dashboard_box_name"
         android:layout_width="233dp"
         android:layout_height="48dp"
+        android:layout_marginTop="24dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/dashboard_name"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Hey, Alvin"
-            />
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
         <TextView
-            android:id="@+id/textView"
-            android:textColor="#475467"
-            android:textSize="12sp"
-            android:layout_height="wrap_content"
+            android:id="@+id/dashboard_name_subtext"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="There are 11 tasks to complete today"
-            />
+            android:textColor="#475467"
+            android:textSize="12sp" />
     </LinearLayout>
+
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_marginTop="24dp"
         android:scaleType="fitXY"
         android:src="@drawable/login_logo"
-        tools:layout_editor_absoluteX="322dp"
-        tools:layout_editor_absoluteY="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toEndOf="@+id/dashboard_box_name"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/Overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Overview"
+        android:textColor="#0A49C2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bar1t"
+        app:layout_constraintEnd_toStartOf="@+id/dashboard_ongoing"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_box_name"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/dashboard_ongoing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ongoing"
+        android:textColor="#667085"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <TextView
+        android:id="@+id/dashboard_completion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Completion"
+        android:textColor="#667085"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toEndOf="@+id/dashboard_ongoing"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <LinearLayout
+        android:id="@+id/bar1t"
+        android:layout_width="370dp"
+        android:layout_height="4dp"
+        android:background="@drawable/dashboard_background2"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="134dp">
+
+        <LinearLayout
+            android:id="@+id/bar"
+            android:layout_width="74dp"
+            android:layout_height="4dp"
+            android:background="@drawable/dashboard_background"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dashboard_pitch_score"
+        android:layout_width="350dp"
+        android:layout_height="176dp"
+        android:background="@drawable/dashboard_background2"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar1t"
+        app:layout_constraintVertical_bias="0.052">
+
+        <TextView
+            android:id="@+id/dashboard_pitch_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI Simulation Pitching Score   "
+            android:textColor="#343434"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="63%"
+            android:textColor="#000000"
+            android:textSize="46sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
