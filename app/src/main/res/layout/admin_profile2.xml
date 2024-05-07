@@ -196,7 +196,7 @@
                 android:id="@+id/rtup7nnv97a"
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
-                android:background="@drawable/admin2Profile2_asset5"
+                android:background="@drawable/adminProfile2_asset5"
                 android:layout_marginHorizontal="127dp"
                 android:orientation="vertical">
             </LinearLayout>
