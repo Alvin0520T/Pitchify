@@ -42,6 +42,7 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
     <string name="Dashboard">Dashboard</string>
     <string name="AI_Pitching_Simulation">AI Pitching Simulation</string>
     <string name="Resources">Resources</string>
@@ -50,4 +51,7 @@
     <string name="resources">Resources</string>
     <string name="dashboard">Dashboard</string>
     <string name="pitching">Pitching</string>
+
+    <string name="dashboard">dashboard</string>
+
 </resources>
