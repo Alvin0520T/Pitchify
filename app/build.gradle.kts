@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.pitchify_main"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.pitchify_main"

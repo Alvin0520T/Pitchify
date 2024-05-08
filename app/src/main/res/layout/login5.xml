@@ -7,68 +7,70 @@
     android:background="@color/light_blue"
     tools:ignore="ExtraText">
 
-    <!-- login plain logo -->
+    <!-- check email image -->
     <ImageView
-        android:id="@+id/login_logo_image"
-        android:layout_width="247dp"
-        android:layout_height="292dp"
-        android:layout_marginTop="152dp"
-        android:src="@drawable/login_logo"
+        android:id="@+id/login_check_email_image"
+        android:layout_width="320dp"
+        android:layout_height="289dp"
+        android:layout_marginTop="144dp"
+        android:src="@drawable/login_check_email_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/login_pitchify_image" />
+        app:layout_constraintTop_toTopOf="@+id/login_check_email" />
 
-    <!-- Pitchify (bolttech) -->
+    <!-- check your email -->
     <ImageView
-        android:id="@+id/login_pitchify_image"
+        android:id="@+id/login_check_email"
         android:layout_width="298dp"
         android:layout_height="129dp"
         android:layout_marginTop="60dp"
-        android:src="@drawable/login_pitchify"
+        android:src="@drawable/login_check_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluyteX="82dp" />
 
-    <!-- login button -->
+    <!-- open email button -->
     <ImageView
-        android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/login_button"
+        android:id="@+id/login_open_email"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:src="@drawable/login_open_email"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.768"
+        app:layout_constraintVertical_bias="0.736"
         tools:layout_editor_absoluyteX="82dp" />
 
-    <!-- are you retail manager? -->
+    <!-- will do it later button -->
     <ImageView
-        android:id="@+id/ru_retail_manager"
-        android:layout_width="229dp"
-        android:layout_height="30dp"
-        android:src="@drawable/login_ru_retail_manager"
+        android:id="@+id/login_do_later"
+        android:layout_width="318dp"
+        android:layout_height="57dp"
+        android:src="@drawable/login_do_later"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833"
+        app:layout_constraintVertical_bias="0.838"
         tools:layout_editor_absoluyteX="82dp" />
 
-    <!-- terms & condition -->
+    <!-- check spam text -->
     <ImageView
-        android:id="@+id/terms_condition"
-        android:layout_width="229dp"
-        android:layout_height="30dp"
-        android:src="@drawable/login_terms_condition"
+        android:id="@+id/login_spam"
+        android:layout_width="288dp"
+        android:layout_height="44dp"
+        android:src="@drawable/login_spam"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893"
+        app:layout_constraintVertical_bias="0.933"
         tools:layout_editor_absoluyteX="82dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
