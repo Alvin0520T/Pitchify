@@ -3,5 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="light_blue">#E1FBFF</color>
+
     <color name="dark_blue">#0A49C3</color>
+
+    <color name="loadingperformance_grey">#808080</color>
+
 </resources>
