@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/aipitching_feedback_backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:src="@drawable/aipitching_left_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aipitching_feedback_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Feedback"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toEndOf="@+id/aipitching_feedback_backbutton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aipitching_feedback_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="What went well"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toEndOf="@+id/aipitching_feedback_imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/aipitching_feedback_backbutton" />
+
+    <ImageView
+        android:id="@+id/aipitching_feedback_imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/aipitching_feedback_whatwentwellicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aipitching_feedback_backbutton" />
+
+    <ImageView
+        android:id="@+id/aipitching_feedback_imageView2"
+        android:layout_width="377dp"
+        android:layout_height="295dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/aipitching_performanceanalysis_greybox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aipitching_feedback_text2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="fill_horizontal"
+        android:lineSpacingExtra="5dp"
+        android:text="The sales representative consistently maintained
+        \na high level of responsiveness,demonstrating
+        \nengagement from the initial greeting to the in-
+        \ndepth product discussion. Skillfully addressing
+        \nthe customer's inquiries about the ProDesign series,
+        \nthe representative ensured a comprehensive
+        \nunderstanding of the customer's graphic design
+        \nrequirements. Concerns about the price were met
+        \nwith a persuasive response, emphasizing the
+        \nproduct's long-term value and current promotional
+        \nofferings. Overall, the sales rep's adept navigation
+        \nand thoughtful responses contributed to a positive
+        \nand productive interaction."
+        app:layout_constraintEnd_toEndOf="@+id/aipitching_feedback_imageView2"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/aipitching_feedback_imageView2"
+        app:layout_constraintTop_toTopOf="@+id/aipitching_feedback_imageView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/aipitching_feedback_imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/aipitching_feedback_areaofimprovementicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aipitching_feedback_imageView2" />
+
+    <TextView
+        android:id="@+id/aipitching_feedback_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="22dp"
+        android:text="Areas to improve"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/aipitching_feedback_imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/aipitching_feedback_imageView2" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/botnavigation_bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

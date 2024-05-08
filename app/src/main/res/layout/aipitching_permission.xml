@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_blue">
+
+    <ImageButton
+        android:id="@+id/aipitching_permission_backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:src="@drawable/aipitching_left_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aipitching_permission_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Requirements"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toEndOf="@+id/aipitching_permission_backbutton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/boxContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/box_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aipitching_permission_text1" />
+
+    <TextView
+        android:id="@+id/boxContentTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/box_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boxContentTextView" />
+
+    <ImageButton
+        android:id="@+id/aipitching_permission_cambutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/aipitching_allowbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/boxContentTextView2"
+        app:layout_constraintEnd_toEndOf="@+id/boxContentTextView2"
+        app:layout_constraintStart_toStartOf="@+id/boxContentTextView2" />
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="72dp"
+        android:text="“Pitchify” would like to access \nyour Webcam"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/boxContentTextView2"
+        app:layout_constraintEnd_toEndOf="@+id/boxContentTextView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/boxContentTextView2" />
+
+    <ImageView
+        android:id="@+id/webCamIconTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/webcam_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/boxContentTextView2"
+        app:layout_constraintEnd_toEndOf="@+id/boxContentTextView2"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/boxContentTextView2" />
+
+    <ImageView
+        android:id="@+id/micIconTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="119dp"
+        android:background="@drawable/aipitching_mic_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/boxContentTextView"
+        app:layout_constraintEnd_toEndOf="@+id/boxContentTextView"
+        app:layout_constraintStart_toStartOf="@+id/boxContentTextView"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:text="“Pitchify” would like to access \nyour Microphone"
+
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/boxContentTextView"
+        app:layout_constraintEnd_toEndOf="@+id/boxContentTextView"
+        app:layout_constraintStart_toStartOf="@+id/boxContentTextView" />
+
+    <ImageButton
+        android:id="@+id/aipitching_permission_micbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/aipitching_allowbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/boxContentTextView"
+        app:layout_constraintEnd_toEndOf="@+id/boxContentTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/boxContentTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/boxContentTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/box_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boxContentTextView2" />
+
+    <ImageView
+        android:id="@+id/loadingIconTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/loading_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/boxContentTextView3"
+        app:layout_constraintEnd_toEndOf="@+id/boxContentTextView3"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/boxContentTextView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:text="“Pitchify” would like to have \n10 minutes of your time!"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/boxContentTextView3"
+        app:layout_constraintEnd_toEndOf="@+id/boxContentTextView3"
+        app:layout_constraintStart_toStartOf="@+id/boxContentTextView3" />
+
+    <ImageButton
+        android:id="@+id/aipitching_permission_nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/aipitching_allowbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/boxContentTextView3"
+        app:layout_constraintEnd_toEndOf="@+id/boxContentTextView3"
+        app:layout_constraintStart_toStartOf="@+id/boxContentTextView3" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/botnavigation_bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
