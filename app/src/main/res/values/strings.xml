@@ -43,6 +43,10 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
 
+    <string name="talk_ratio">Talk ratio</string>
+    <string name="hey_alvin">Hey, Alvin</string>
+
+
     <string name="Dashboard">Dashboard</string>
     <string name="AI_Pitching_Simulation">AI Pitching Simulation</string>
     <string name="Resources">Resources</string>
@@ -53,5 +57,6 @@
     <string name="pitching">Pitching</string>
 
     <string name="dashboard">dashboard</string>
+
 
 </resources>
