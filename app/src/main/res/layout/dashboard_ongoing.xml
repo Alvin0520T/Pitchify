@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1FBFF">
+
+    <LinearLayout
+        android:id="@+id/dashboard_ongoing_box_name"
+        android:layout_width="233dp"
+        android:layout_height="48dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/dashboard_ongoing_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hey_alvin"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dashboard_ongoing_name_subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="There are 11 tasks to complete today"
+            android:textColor="#475467"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dashboard_ongoing_profile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/dashboard_ongoing_Overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Overview"
+        android:textColor="#667085"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <TextView
+        android:id="@+id/dashboard_ongoing_ongoing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ongoing"
+        android:textColor="#0A49C2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <TextView
+        android:id="@+id/dashboard_ongoing_completion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completion"
+        android:textColor="#667085"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <LinearLayout
+        android:id="@+id/bar1t"
+        android:layout_width="345dp"
+        android:layout_height="4dp"
+        android:background="@drawable/dashboard_background2"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173">
+
+        <LinearLayout
+            android:id="@+id/bar"
+            android:layout_width="74dp"
+            android:layout_height="4dp"
+            android:background="@drawable/dashboard_background"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dashboard_imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_dashboard4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.464">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/dashboard_imageView3"
+        android:layout_width="291dp"
+        android:layout_height="79dp"
+        android:background="@drawable/content_dashboard5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.467">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/dashboard_imageView1"
+        android:layout_width="332dp"
+        android:layout_height="246dp"
+        android:background="@drawable/content_dashboard3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/dashboard_ongoing_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10am Product Training"
+        android:textColor="#163815"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView1"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView1"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView1"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView1"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/dashboard_ongoing_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="240dp"
+        android:text="Product 1"
+        android:textColor="#163815"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView1"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView1"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView1"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <TextView
+        android:id="@+id/dashboard_ongoing_p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nov 6, 2022"
+        android:textColor="#163815"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView1"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView1"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView1"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView1"
+        app:layout_constraintVertical_bias="0.343" />
+
+
+    <ImageView
+        android:id="@+id/dashboard_date_ongoing"
+        android:layout_width="19dp"
+        android:layout_height="18dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dashboard_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dashboard_task_ongoing"
+        android:layout_width="19dp"
+        android:layout_height="18dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dashboard_task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/dashboard_ongoing_p4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 Tasks"
+        android:textColor="#163815"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView1"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView1"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView1"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView1"
+        app:layout_constraintVertical_bias="0.462" />
+
+    <TextView
+        android:id="@+id/dashboard_ongoing_p5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn more about this product!"
+        android:textColor="#163815"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView1"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView1"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView1"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView1"
+        app:layout_constraintVertical_bias="0.582" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="114dp"
+        android:layout_height="32dp"
+        android:background="@drawable/dashboard_background3"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView1"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView1"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView1"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView1"
+        app:layout_constraintVertical_bias="0.78">
+
+        <TextView
+            android:id="@+id/dashboard_on_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On Progress"
+            android:textColor="#E1FBFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dashboard_percentage_ongoing"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:text="80"
+        android:textColor="#0094FF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView1"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView1"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView1"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView1"
+        app:layout_constraintVertical_bias="0.774" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
