@@ -54,12 +54,12 @@
             android:theme="@style/Theme.Pitchify_Main" />
 
         <activity
-            android:name=".login_screens.a_login"
+            android:name=".login_screens.a_signup"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main" />
 
         <activity
-            android:name=".login_screens.a_signup"
+            android:name=".login_screens.a_signup2"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main" />
 
