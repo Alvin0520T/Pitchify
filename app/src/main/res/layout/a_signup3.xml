@@ -9,7 +9,7 @@
 
     <!-- arrow back button -->
     <ImageView
-        android:id="@+id/login3_arrow_back_button"
+        android:id="@+id/admin_signup3_arrow_back_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/baseline_arrow_back_ios_24"
@@ -23,7 +23,7 @@
 
     <!-- forget password text -->
     <TextView
-        android:id="@+id/login3_forget_password_text"
+        android:id="@+id/admin_signup3_forget_password_text"
         android:layout_width="143dp"
         android:layout_height="30dp"
         android:text="Forget password"
@@ -32,13 +32,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toEndOf="@+id/login3_arrow_back_button"
+        app:layout_constraintStart_toEndOf="@+id/admin_signup3_arrow_back_button"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.06" />
 
     <!-- Email cardView -->
     <androidx.cardview.widget.CardView
-        android:id="@+id/login3_email_cardView"
+        android:id="@+id/admin_signup3_email_cardView"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="#FFFFFF"
@@ -53,7 +53,7 @@
 
         <!-- Email input -->
         <EditText
-            android:id="@+id/login3_enter_email"
+            android:id="@+id/admin_signup3_enter_email"
             android:layout_width="320dp"
             android:layout_height="56dp"
             android:layout_marginLeft="12dp"
@@ -69,9 +69,8 @@
             app:layout_constraintVertical_bias="0.122" />
     </androidx.cardview.widget.CardView>
 
-    <!-- Email guide-->
     <ImageView
-        android:id="@+id/login3_email_guide"
+        android:id="@+id/admin_signup3_email_guide"
         android:layout_width="324dp"
         android:layout_height="61dp"
         android:src="@drawable/login_email_guide"
@@ -80,12 +79,11 @@
         app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.238"
+        app:layout_constraintVertical_bias="0.231"
         tools:layout_editor_absoluyteX="82dp" />
 
-    <!--Sent email button-->
     <ImageView
-        android:id="@+id/login3_sent_email"
+        android:id="@+id/admin_signup3_sent_email"
         android:layout_width="326dp"
         android:layout_height="57dp"
         android:src="@drawable/login_sent_email"
@@ -94,7 +92,7 @@
         app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.357"
+        app:layout_constraintVertical_bias="0.327"
         tools:layout_editor_absoluyteX="82dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

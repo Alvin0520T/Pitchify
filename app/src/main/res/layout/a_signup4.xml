@@ -9,7 +9,7 @@
 
     <!-- arrow back button -->
     <ImageView
-        android:id="@+id/arrow_back_button"
+        android:id="@+id/admin_signup4_arrow_back_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/baseline_arrow_back_ios_24"
@@ -23,7 +23,7 @@
 
     <!-- forget password text -->
     <TextView
-        android:id="@+id/forget_password_text"
+        android:id="@+id/admin_signup4_forget_password_text"
         android:layout_width="143dp"
         android:layout_height="30dp"
         android:text="Forget password"
@@ -32,13 +32,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toEndOf="@+id/arrow_back_button"
+        app:layout_constraintStart_toEndOf="@+id/admin_signup4_arrow_back_button"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.06" />
 
     <!-- Email cardView -->
     <androidx.cardview.widget.CardView
-        android:id="@+id/email_cardView"
+        android:id="@+id/admin_signup4_email_cardView"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="#FFFFFF"
@@ -53,7 +53,7 @@
 
         <!-- Email input -->
         <EditText
-            android:id="@+id/enter_email"
+            android:id="@+id/admin_signup4_enter_email"
             android:layout_width="320dp"
             android:layout_height="56dp"
             android:layout_marginLeft="12dp"
@@ -70,7 +70,7 @@
 
         <!--alert circle -->
         <ImageView
-            android:id="@+id/login_alert_circle"
+            android:id="@+id/admin_signup4_alert_circle"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="290dp"
@@ -82,7 +82,7 @@
 
     <!-- No account alert-->
     <ImageView
-        android:id="@+id/login_no_account"
+        android:id="@+id/admin_signup4_no_account"
         android:layout_width="273dp"
         android:layout_height="27dp"
         android:src="@drawable/login_no_account"
@@ -96,7 +96,7 @@
 
     <!-- Email guide-->
     <ImageView
-        android:id="@+id/login_email_guide"
+        android:id="@+id/admin_signup4_email_guide"
         android:layout_width="342dp"
         android:layout_height="57dp"
         android:src="@drawable/login_email_guide"
@@ -111,7 +111,7 @@
 
     <!--Sent email button-->
     <ImageView
-        android:id="@+id/login_sent_email"
+        android:id="@+id/admin_signup4_sent_email"
         android:layout_width="337dp"
         android:layout_height="60dp"
         android:src="@drawable/login_sent_email"

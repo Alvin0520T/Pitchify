@@ -195,7 +195,6 @@
                     >
                     <com.google.android.material.imageview.ShapeableImageView
                         android:id="@+id/roefjxp6bwn"
-                        app:shapeAppearanceOverlay="@style/cr10"
                         android:layout_width="25dp"
                         android:layout_height="wrap_content"
                         android:src="@mipmap/ic_launcher"
