@@ -7,23 +7,24 @@
     android:background="@color/light_blue"
     tools:ignore="ExtraText">
 
-    <!-- login2 button -->
-    <ImageView
-        android:id="@+id/login2_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/login_button"
+    <!-- reset your password -->
+    <TextView
+        android:id="@+id/admin_signup6_reset_your_password"
+        android:layout_width="212dp"
+        android:layout_height="31dp"
+        android:text="Reset your password"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toEndOf="@+id/admin_signup6_arrow_back_button"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396"
-        tools:layout_editor_absoluyteX="82dp" />
+        app:layout_constraintVertical_bias="0.066" />
 
     <!-- arrow back button -->
     <ImageView
-        android:id="@+id/arrow_back_button"
+        android:id="@+id/admin_signup6_arrow_back_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/baseline_arrow_back_ios_24"
@@ -35,24 +36,9 @@
         app:layout_constraintVertical_bias="0.066"
         tools:layout_editor_absoluyteX="82dp" />
 
-    <!-- sign in text -->
-    <TextView
-        android:id="@+id/sign_in_text"
-        android:layout_width="60dp"
-        android:layout_height="30dp"
-        android:text="Sign in"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toEndOf="@+id/arrow_back_button"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06" />
-
-    <!-- Email cardView -->
+    <!-- enter new password cardView -->
     <androidx.cardview.widget.CardView
-        android:id="@+id/email_cardView"
+        android:id="@+id/admin_signup6_enter_new_password_cardView"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="#FFFFFF"
@@ -65,21 +51,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.141">
 
-        <!-- Email input -->
+        <!-- enter new password input -->
         <EditText
-            android:id="@+id/enter_email"
+            android:id="@+id/admin_signup6_enter_new_password"
             android:layout_width="322dp"
             android:layout_height="49dp"
             android:layout_marginLeft="12dp"
             android:background="@android:color/transparent"
-            android:hint="Email"
+            android:hint="Enter new password"
             android:imeOptions="actionNext"
-            android:inputType="textEmailAddress" />
+            android:inputType="textPassword" />
+
+        <!--enter new password visible -->
     </androidx.cardview.widget.CardView>
 
-    <!-- Password CardView -->
+    <!-- reenter new password CardView -->
     <androidx.cardview.widget.CardView
-        android:id="@+id/password_cardView"
+        android:id="@+id/admin_signup6_reenter_new_password_cardView"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="#FFFFFF"
@@ -92,14 +80,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.23">
 
-        <!-- Password input -->
+        <!-- reenter new password input -->
         <EditText
-            android:id="@+id/enter_password"
+            android:id="@+id/reenter_new_password"
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:layout_marginLeft="12dp"
             android:background="@android:color/transparent"
-            android:hint="Password"
+            android:hint="Reenter new password"
             android:imeOptions="actionNext"
             android:inputType="textPassword"
             app:layout_constraintBottom_toTopOf="@+id/login2_button"
@@ -107,20 +95,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <!--password visible -->
+        <!--reenter new password visible -->
     </androidx.cardview.widget.CardView>
 
-    <!-- forget password? -->
+    <!-- reset button -->
     <ImageView
-        android:id="@+id/login2_forget_password"
-        android:layout_width="229dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/login_forget_pass"
-        app:layout_constraintBottom_toTopOf="@+id/login2_button"
+        android:id="@+id/reset_button"
+        android:layout_width="344dp"
+        android:layout_height="95dp"
+        android:src="@drawable/login_reset"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_cardView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.347"
         tools:layout_editor_absoluyteX="82dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
