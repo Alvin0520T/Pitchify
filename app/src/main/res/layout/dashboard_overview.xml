@@ -87,6 +87,7 @@
         android:id="@+id/dashboard_completion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="true"
         android:text="Completion"
         android:textColor="#667085"
         android:textSize="16sp"
@@ -404,5 +405,17 @@
         app:layout_constraintVertical_bias="0.909"
         tools:ignore="MissingConstraints" />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/botnavigation_bar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
