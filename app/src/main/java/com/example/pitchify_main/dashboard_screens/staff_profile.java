@@ -22,8 +22,7 @@ public class staff_profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.staff_profile);
 
-    }
-}
+
 
         ImageButton staff_profile_backbutton = findViewById(R.id.staff_profile_backbutton);
         ImageView staff_profile_editbutton = findViewById(R.id.dashboard_profile_profile);
