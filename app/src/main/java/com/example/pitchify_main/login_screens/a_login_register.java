@@ -23,7 +23,7 @@ public class a_login_register extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(a_login_register.this, a_signup2.class);
+                Intent intent = new Intent(a_login_register.this, a_login.class);
                 startActivity(intent);
             }
         });
@@ -31,7 +31,7 @@ public class a_login_register extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(a_login_register.this, a_signup.class);
+                Intent intent = new Intent(a_login_register.this, a_register.class);
                 startActivity(intent);
             }
         });

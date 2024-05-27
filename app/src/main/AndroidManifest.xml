@@ -54,12 +54,22 @@
             android:theme="@style/Theme.Pitchify_Main" />
 
         <activity
-            android:name=".login_screens.a_signup"
+            android:name=".login_screens.a_login"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main" />
 
         <activity
-            android:name=".login_screens.a_signup2"
+            android:name=".login_screens.a_register"
+            android:exported="false"
+            android:theme="@style/Theme.Pitchify_Main" />
+
+        <activity
+            android:name=".login_screens.a_register_success"
+            android:exported="false"
+            android:theme="@style/Theme.Pitchify_Main" />
+
+        <activity
+            android:name=".login_screens.admin_profile"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main" />
 
