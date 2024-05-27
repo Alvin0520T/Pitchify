@@ -7,35 +7,43 @@
     android:background="@color/light_blue"
     tools:ignore="ExtraText">
 
-    <!-- login plain logo -->
     <ImageView
-        android:id="@+id/login_logo_image"
+        android:id="@+id/admin_login_register_arrow_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036"
+        tools:layout_editor_absoluyteX="82dp" />
+
+    <ImageView
+        android:id="@+id/admin_login_register_logo_image"
         android:layout_width="247dp"
         android:layout_height="292dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="136dp"
         android:src="@drawable/login_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/login_pitchify_image" />
+        app:layout_constraintTop_toTopOf="@+id/admin_login_register_pitchify_image" />
 
-    <!-- Pitchify (bolttech) -->
     <ImageView
-        android:id="@+id/login_pitchify_image"
+        android:id="@+id/admin_login_register_pitchify_image"
         android:layout_width="298dp"
         android:layout_height="129dp"
         android:layout_marginTop="60dp"
-        android:src="@drawable/login_pitchify"
+        android:src="@drawable/a_login_pitchify"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluyteX="82dp" />
 
-    <!-- login button -->
-
-    <!-- are you retail manager? -->
     <ImageView
-        android:id="@+id/login_button"
+        android:id="@+id/admin_login_register_login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/login_button"
@@ -44,24 +52,24 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.747"
+        app:layout_constraintVertical_bias="0.724"
         tools:layout_editor_absoluyteX="82dp" />
 
-    <!-- terms & condition -->
     <ImageView
-        android:id="@+id/ru_retail_manager"
-        android:layout_width="229dp"
-        android:layout_height="30dp"
-        android:src="@drawable/login_ru_retail_manager"
+        android:id="@+id/admin_login_register_register_button"
+        android:layout_width="332dp"
+        android:layout_height="63dp"
+        android:src="@drawable/a_login_register_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.817"
+        app:layout_constraintVertical_bias="0.83"
         tools:layout_editor_absoluyteX="82dp" />
 
     <ImageView
-        android:id="@+id/terms_condition"
+        android:id="@+id/admin_login_register_terms_condition"
         android:layout_width="229dp"
         android:layout_height="30dp"
         android:src="@drawable/login_terms_condition"
@@ -69,7 +77,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893"
+        app:layout_constraintVertical_bias="0.904"
         tools:layout_editor_absoluyteX="82dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
