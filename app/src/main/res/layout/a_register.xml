@@ -8,19 +8,20 @@
     tools:ignore="ExtraText">
 
     <ImageView
-        android:id="@+id/admin_signup_agree_button"
+        android:id="@+id/admin_register_create_account"
         android:layout_width="349dp"
         android:layout_height="100dp"
-        android:src="@drawable/a_register_agree_button"
+        android:src="@drawable/a_register_createacc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.677"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.949"
+        app:layout_constraintVertical_bias="0.952"
         tools:layout_editor_absoluyteX="82dp" />
 
     <ImageView
-        android:id="@+id/admin_signup_arrow_back_button"
+        android:id="@+id/admin_register_arrow_back_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/baseline_arrow_back_ios_24"
@@ -42,12 +43,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
-        app:layout_constraintStart_toEndOf="@+id/admin_signup_arrow_back_button"
+        app:layout_constraintStart_toEndOf="@+id/admin_register_arrow_back_button"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.062" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/admin_signup_first_name_cardView"
+        android:id="@+id/admin_register_first_name_cardView"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="#FFFFFF"
@@ -62,7 +63,7 @@
 
         <!-- Email input -->
         <EditText
-            android:id="@+id/admin_signup_enter_first_name"
+            android:id="@+id/admin_register_enter_first_name"
             android:layout_width="322dp"
             android:layout_height="49dp"
             android:layout_marginLeft="12dp"
@@ -74,7 +75,7 @@
 
     <!-- Password CardView -->
     <androidx.cardview.widget.CardView
-        android:id="@+id/admin_signup_enter_last_name_cardView"
+        android:id="@+id/admin_register_enter_last_name_cardView"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="#FFFFFF"
@@ -89,7 +90,7 @@
 
 
         <EditText
-            android:id="@+id/admin_signup_enter_last_name"
+            android:id="@+id/admin_register_enter_last_name"
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:layout_marginLeft="12dp"
@@ -104,7 +105,7 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/admin_signup_makesure"
+        android:id="@+id/admin_register_makesure"
         android:layout_width="319dp"
         android:layout_height="40dp"
         android:src="@drawable/a_register_makesure"
@@ -117,7 +118,7 @@
         tools:layout_editor_absoluyteX="82dp" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/admin_signup_email_cardView"
+        android:id="@+id/admin_register_email_cardView"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="#FFFFFF"
@@ -131,7 +132,7 @@
         app:layout_constraintVertical_bias="0.414">
 
         <EditText
-            android:id="@+id/admin_signup_enter_email"
+            android:id="@+id/admin_register_enter_email"
             android:layout_width="325dp"
             android:layout_height="49dp"
             android:layout_marginLeft="12dp"
@@ -142,7 +143,7 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/admin_signup_receipts"
+        android:id="@+id/admin_register_receipts"
         android:layout_width="325dp"
         android:layout_height="34dp"
         android:src="@drawable/a_register_receipts"
@@ -155,7 +156,7 @@
         tools:layout_editor_absoluyteX="82dp" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/admin_signup_password_cardView"
+        android:id="@+id/admin_register_password_cardView"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="#FFFFFF"
@@ -169,7 +170,7 @@
         app:layout_constraintVertical_bias="0.571">
 
         <EditText
-            android:id="@+id/admin_signup_enter_password"
+            android:id="@+id/admin_register_enter_password"
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:layout_marginLeft="12dp"
@@ -186,7 +187,7 @@
 
 
     <ImageView
-        android:id="@+id/admin_signup_terms"
+        android:id="@+id/admin_register_terms"
         android:layout_width="342dp"
         android:layout_height="74dp"
         android:src="@drawable/a_register_terms"
