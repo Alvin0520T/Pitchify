@@ -253,4 +253,25 @@ public class PitchifyDBHelper extends SQLiteOpenHelper {
         return count > 0;
     }
 
+    public ArrayList<User> getAllUsers() {
+        ArrayList<User> users = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
+
+        if (cursor.moveToFirst()) {
+            do {
+                @SuppressLint("Range") String firstname = cursor.getString(cursor.getColumnIndex(FIRST_NAME_FIELD));
+                @SuppressLint("Range") String lastname = cursor.getString(cursor.getColumnIndex(LAST_NAME_FIELD));
+                @SuppressLint("Range") String email = cursor.getString(cursor.getColumnIndex(EMAIL_FIELD));
+                @SuppressLint("Range") String password = cursor.getString(cursor.getColumnIndex(PASSWORD_FIELD));
+                users.add(new User(firstname, lastname, email, password));
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        db.close();
+        return users;
+    }
+
+
+
 }
