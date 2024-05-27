@@ -18,7 +18,7 @@
             android:theme="@style/Theme.Pitchify_Main" />
 
         <activity
-            android:name=".resources_screens.resources_training"
+            android:name=".resource_screens.resources_training"
             android:exported="true" >
 
             <intent-filter>
@@ -30,39 +30,39 @@
         </activity>
 
         <activity
-            android:name=".resources_screens.filter_resources"
+            android:name=".resource_screens.filter_resources"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
 
 
         <activity
-            android:name=".resources_screens.resources_enroll_page"
+            android:name=".resource_screens.resources_enroll_page"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
 
 
         <activity
-            android:name=".resources_screens.learning_resources_starting_page"
+            android:name=".resource_screens.learning_resources_starting_page"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main"/>
 
         <activity
-            android:name=".resources_screens.learning_resources_quiz_start"
+            android:name=".resource_screens.learning_resources_quiz_start"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
 
         <activity
-            android:name=".resources_screens.learning_resources_quiz_one"
+            android:name=".resource_screens.learning_resources_quiz_one"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
 
         <activity
-            android:name=".resources_screens.learning_resources_quiz_two"
+            android:name=".resource_screens.learning_resources_quiz_two"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
 
         <activity
-            android:name=".resources_screens.learning_resources_quiz_four"
+            android:name=".resource_screens.learning_resources_quiz_four"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main">
 
