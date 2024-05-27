@@ -4,7 +4,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.pitchify_main.R;
 
-public class dashboard_overview extends AppCompatActivity {
+public class dashboard_overview_login_screens extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

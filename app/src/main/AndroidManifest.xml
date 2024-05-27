@@ -13,20 +13,24 @@
         android:theme="@style/Theme.Pitchify_Main"
         tools:targetApi="31">
 
-        <!-- Activities -->
-
         <activity
+
             android:name=".login_screens.login"
+
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
+        <!-- Activities -->
         <activity
             android:name=".MainActivity"
             android:exported="false"
+
             android:theme="@style/Theme.Pitchify_Main"/>
 
 
@@ -50,23 +54,30 @@
 
         <activity
             android:name=".resource_screens.learning_resources_quiz_start"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
 
         <activity
             android:name=".resource_screens.learning_resources_quiz_one"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
 
         <activity
             android:name=".resource_screens.learning_resources_quiz_two"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
 
         <activity
             android:name=".resource_screens.learning_resources_quiz_four"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main">
+
+
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
 
@@ -97,7 +108,7 @@
             android:theme="@style/Theme.Pitchify_Main" />
 
         <activity
-            android:name=".login_screens.dashboard_overview"
+            android:name=".login_screens.dashboard_overview_login_screens"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main" />
 
@@ -162,6 +173,7 @@
         android:name=".resource_screens.resources_training"
         android:exported="false"
         android:theme="@style/Theme.Pitchify_Main" />
+
 
 
 

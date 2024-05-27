@@ -13,9 +13,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pitchify_main.R;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+
 import org.w3c.dom.Text;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class dashboard_overview extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstancesState) {
