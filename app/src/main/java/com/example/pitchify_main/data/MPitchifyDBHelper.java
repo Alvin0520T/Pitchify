@@ -141,6 +141,30 @@ public class MPitchifyDBHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+    public boolean isEmailUsed(String email) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT COUNT(*) FROM " + TABLE_NAME + " WHERE " + EMAIL_FIELD + "=?";
+        Cursor cursor = db.rawQuery(query, new String[]{email});
+        cursor.moveToFirst();
+        int count = cursor.getInt(0);
+        cursor.close();
+        return count > 0;
+    }
+
+    public boolean addNewVendor(User user) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(FIRST_NAME_FIELD, user.getFirstName());
+        values.put(LAST_NAME_FIELD, user.getLastName());
+        values.put(EMAIL_FIELD, user.getEmail()); // Use name as primary key
+        values.put(PASSWORD_FIELD, user.getPassword());
+
+        long result = db.insert(TABLE_NAME, null, values);
+        db.close();
+
+        return result != -1;
+    }
+
     public void logAdminData() {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);

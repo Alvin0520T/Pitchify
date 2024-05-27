@@ -11,12 +11,12 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pitchify_main.R;
-import com.example.pitchify_main.data.PitchifyDBHelper;
+import com.example.pitchify_main.data.MPitchifyDBHelper;
 import com.example.pitchify_main.model.User;
 
 public class a_register extends AppCompatActivity {
 
-    private PitchifyDBHelper dbHelper;
+    private MPitchifyDBHelper dbHelper;
     private EditText firstNameEditText;
     private EditText lastNameEditText;
     private EditText emailEditText;
@@ -28,7 +28,7 @@ public class a_register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a_register);
 
-        dbHelper = new PitchifyDBHelper(this);
+        dbHelper = new MPitchifyDBHelper(this);
         firstNameEditText = findViewById(R.id.admin_register_enter_first_name);
         lastNameEditText = findViewById(R.id.admin_register_enter_last_name);
         emailEditText = findViewById(R.id.admin_register_enter_email);
