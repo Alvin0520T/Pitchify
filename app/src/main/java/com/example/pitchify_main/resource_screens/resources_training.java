@@ -1,9 +1,14 @@
 package com.example.pitchify_main.resource_screens;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import android.os.Bundle;
+
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pitchify_main.R;
@@ -14,6 +19,7 @@ public class resources_training extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.resources_training);
+
 
         ImageView loginButton = findViewById(R.id.filter_resourcess);
 
@@ -28,3 +34,7 @@ public class resources_training extends AppCompatActivity {
         });
     }
 }
+
+    }
+}
+

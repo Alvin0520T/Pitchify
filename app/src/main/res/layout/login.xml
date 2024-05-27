@@ -32,6 +32,8 @@
         tools:layout_editor_absoluyteX="82dp" />
 
     <!-- login button -->
+
+    <!-- are you retail manager? -->
     <ImageView
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
@@ -42,10 +44,10 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.768"
+        app:layout_constraintVertical_bias="0.747"
         tools:layout_editor_absoluyteX="82dp" />
 
-    <!-- are you retail manager? -->
+    <!-- terms & condition -->
     <ImageView
         android:id="@+id/ru_retail_manager"
         android:layout_width="229dp"
@@ -55,10 +57,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833"
+        app:layout_constraintVertical_bias="0.817"
         tools:layout_editor_absoluyteX="82dp" />
 
-    <!-- terms & condition -->
     <ImageView
         android:id="@+id/terms_condition"
         android:layout_width="229dp"

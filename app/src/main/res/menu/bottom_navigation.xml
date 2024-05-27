@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <item
-        android:id="@+id/resources"
-        android:icon="@drawable/baseline_article_24"
+        android:id="@+id/nav1"
+        android:icon="@drawable/book_icon"
         android:title="resources" />
 
     <item
-        android:id="@+id/dashboard"
-        android:icon="@drawable/baseline_bar_chart_24"
+        android:id="@+id/nav2"
+        android:icon="@drawable/chart_icon"
         android:title="dashboard" />
 
     <item
-        android:id="@+id/ai_pitching_simulation"
-        android:icon="@drawable/baseline_face_retouching_natural_24"
+        android:id="@+id/nav3"
+        android:icon="@drawable/aipitching_icon"
         android:title="pitching" />
 
     <item
-        android:id="@+id/profile"
-        android:icon="@drawable/baseline_account_circle_24"
-        android:title="Profile" />
+        android:id="@+id/nav4"
+        android:icon="@drawable/profile_icon"
+        android:title="profile" />
 </menu>

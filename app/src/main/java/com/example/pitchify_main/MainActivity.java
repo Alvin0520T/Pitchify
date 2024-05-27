@@ -10,7 +10,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.aipitching_feedback);
+
+
+
+        setContentView(R.layout.login);
+
+
 
     }
 }

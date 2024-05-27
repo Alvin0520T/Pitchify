@@ -64,28 +64,30 @@
         app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115" />
+        app:layout_constraintVertical_bias="0.115"
+        />
+
 
     <TextView
         android:id="@+id/dashboard_ongoing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="73dp"
+        android:layout_height="48dp"
+        android:clickable="true"
         android:text="Ongoing"
         android:textColor="#667085"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" />
-
+        app:layout_constraintVertical_bias="0.117" />
 
     <TextView
         android:id="@+id/dashboard_completion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="true"
         android:text="Completion"
         android:textColor="#667085"
         android:textSize="16sp"
@@ -129,7 +131,8 @@
         app:layout_constraintHorizontal_bias="0.409"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.234"></ImageView>
+        app:layout_constraintVertical_bias="0.234">
+    </ImageView>
 
     <TextView
         android:id="@+id/dashboard_pitch_label"
@@ -402,5 +405,22 @@
         app:layout_constraintVertical_bias="0.909"
         tools:ignore="MissingConstraints" />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/nav"
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:menu="@menu/bottom_navigation" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 

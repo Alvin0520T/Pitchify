@@ -2,13 +2,29 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+
       <entry key="app">
+
+      <entry key="aipitching_permission">
+
         <State />
       </entry>
       <entry key="learning_resources_quiz_start">
         <State />
       </entry>
       <entry key="resources_enroll_page">
+        <State />
+      </entry>
+      <entry key="dashboard_overview">
+        <State />
+      </entry>
+      <entry key="login">
+        <State />
+      </entry>
+      <entry key="login (1)">
+        <State />
+      </entry>
+      <entry key="login2">
         <State />
       </entry>
     </value>

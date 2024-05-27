@@ -108,25 +108,16 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <!--password visible -->
-        <ImageView
-            android:id="@+id/login_password_visible"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="290dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="29dp"
-
-            android:src="@drawable/login_password_visible"
-            tools:layout_editor_absoluyteX="82dp" />
     </androidx.cardview.widget.CardView>
 
     <!-- forget password? -->
     <ImageView
-        android:id="@+id/forget_password"
+        android:id="@+id/login2_forget_password"
         android:layout_width="229dp"
         android:layout_height="30dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/login_forget_pass"
+        app:layout_constraintBottom_toTopOf="@+id/login2_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_cardView"
