@@ -15,7 +15,7 @@
 
         <!-- Activities -->
         <activity
-            android:name=".login_screens.login"
+            android:name=".admin_staffoverviewperformance.admin_staffoverviewperformance_row"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -60,6 +60,41 @@
 
         <activity
             android:name=".login_screens.a_signup2"
+            android:exported="false"
+            android:theme="@style/Theme.Pitchify_Main" />
+
+        <activity
+            android:name=".aipitching_screens.aipitching_feedback"
+            android:exported="false"
+            android:theme="@style/Theme.Pitchify_Main" />
+
+        <activity
+            android:name=".aipitching_screens.aipitching_loadingperformance"
+            android:exported="false"
+            android:theme="@style/Theme.Pitchify_Main" />
+
+        <activity
+            android:name=".aipitching_screens.aipitching_permission"
+            android:exported="false"
+            android:theme="@style/Theme.Pitchify_Main" />
+
+        <activity
+            android:name=".login_screens.login"
+            android:exported="false"
+            android:theme="@style/Theme.Pitchify_Main" />
+
+        <activity
+        android:name=".resource_screens.resources_training"
+        android:exported="false"
+        android:theme="@style/Theme.Pitchify_Main" />
+
+        <activity
+            android:name=".dashboard_screens.dashboard_overview"
+            android:exported="false"
+            android:theme="@style/Theme.Pitchify_Main" />
+
+        <activity
+            android:name=".dashboard_screens.staff_profile"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main" />
 

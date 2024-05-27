@@ -402,5 +402,16 @@
         app:layout_constraintVertical_bias="0.909"
         tools:ignore="MissingConstraints" />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
