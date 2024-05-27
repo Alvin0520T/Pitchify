@@ -17,6 +17,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"
+
             android:theme="@style/Theme.Pitchify_Main"/>
 
         <activity
@@ -24,8 +25,55 @@
             android:name=".login_screens.login"
 
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".resource_screens.filter_resources"
+            android:exported="true"
+            android:theme="@style/Theme.Pitchify_Main"/>
+
+
+        <activity
+            android:name=".resource_screens.resources_enroll_page"
+            android:exported="true"
+            android:theme="@style/Theme.Pitchify_Main"/>
+
+
+        <activity
+            android:name=".resource_screens.learning_resources_starting_page"
+            android:exported="false"
+            android:theme="@style/Theme.Pitchify_Main"/>
+
+        <activity
+            android:name=".resource_screens.learning_resources_quiz_start"
+            android:exported="true"
+            android:theme="@style/Theme.Pitchify_Main"/>
+
+        <activity
+            android:name=".resource_screens.learning_resources_quiz_one"
+            android:exported="true"
+            android:theme="@style/Theme.Pitchify_Main"/>
+
+        <activity
+            android:name=".resource_screens.learning_resources_quiz_two"
+            android:exported="true"
+            android:theme="@style/Theme.Pitchify_Main"/>
+
+        <activity
+            android:name=".resource_screens.learning_resources_quiz_four"
+            android:exported="true"
+            android:theme="@style/Theme.Pitchify_Main">
+
+
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
