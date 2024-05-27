@@ -113,16 +113,6 @@
             android:theme="@style/Theme.Pitchify_Main" />
 
         <activity
-            android:name=".login_screens.login3"
-            android:exported="false"
-            android:theme="@style/Theme.Pitchify_Main" />
-
-        <activity
-            android:name=".login_screens.login5"
-            android:exported="false"
-            android:theme="@style/Theme.Pitchify_Main" />
-
-        <activity
             android:name=".login_screens.a_login_register"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main" />

@@ -31,7 +31,7 @@ public class login2 extends AppCompatActivity {
         passwordEditText = findViewById(R.id.enter_password);
         ImageView loginButton = findViewById(R.id.login2_button);
         ImageView backButton = findViewById(R.id.arrow_back_button);
-        ImageView forgetPasswordButton = findViewById(R.id.login2_forget_password);
+
 
 
         try {
@@ -61,14 +61,6 @@ public class login2 extends AppCompatActivity {
             }
         });
 
-        forgetPasswordButton.setOnClickListener(new View.OnClickListener() { // New forget password button click listener
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(login2.this, login3.class);
-                startActivity(intent);
-                finish(); // Optionally close the current activity
-            }
-        });
 
     }
 
