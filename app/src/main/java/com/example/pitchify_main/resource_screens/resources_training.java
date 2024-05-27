@@ -35,6 +35,5 @@ public class resources_training extends AppCompatActivity {
     }
 }
 
-    }
-}
+
 
