@@ -6,12 +6,16 @@ public class User {
     private String email;
     private String password;
 
+    private String transcript;
+
     private int buttonId;
     public User(String firstname, String lastname, String email, String password) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
         this.password = password;
+        this.transcript = transcript;
+
 
     }
 
@@ -45,6 +49,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getTranscript() {
+        return transcript;
+    }
+
+    public void setTranscript(String transcript) {
+        this.transcript = transcript;
     }
 
 }
