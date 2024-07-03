@@ -26,6 +26,8 @@
 
         </activity>
 
+        <activity android:name=".ChatActivity" />
+
         <!-- Activities -->
         <activity
             android:name=".MainActivity"
@@ -45,7 +47,6 @@
             android:name=".resource_screens.resources_enroll_page"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
-
 
         <activity
             android:name=".resource_screens.learning_resources_starting_page"
