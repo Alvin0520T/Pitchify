@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aipitching_performance">
+
+    <ImageView
+        android:id="@+id/aipitching_performanceanalysis_imageView2"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="182dp"
+        android:background="@drawable/aipitching_performanceanalysis_bluebox"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollViewTranscript"
+        android:layout_width="wrap_content"
+        android:layout_height="405dp"
+        android:layout_alignStart="@+id/aipitching_performanceanalysis_imageView2"
+        android:layout_alignTop="@+id/aipitching_performanceanalysis_imageView2"
+        android:layout_alignEnd="@+id/aipitching_performanceanalysis_imageView2"
+        android:layout_alignBottom="@+id/aipitching_performanceanalysis_imageView2"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <TextView
+            android:id="@+id/tvTranscript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text=""
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation" />
+
+    <TextView
+        android:id="@+id/aipitching_performanceanalysis_text2"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="84dp"
+        android:text="Transcription"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/aipitching_performanceanalysis_backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="19dp"
+        android:background="#00000000"
+        android:src="@drawable/aipitching_left_icon" />
+
+    <TextView
+        android:id="@+id/aipitching_performanceanalysis_text1"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@id/aipitching_performanceanalysis_backbutton"
+        android:text="Performance"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="#0A49C3"
+        android:text="Start Recording" />
+
+</RelativeLayout>

@@ -88,6 +88,8 @@
         app:layout_constraintTop_toTopOf="@+id/aipitching_feedback_imageView2"
         app:layout_constraintVertical_bias="1.0" />
 
+
+
     <ImageView
         android:id="@+id/aipitching_feedback_imageView3"
         android:layout_width="wrap_content"
@@ -112,6 +114,34 @@
         app:layout_constraintStart_toEndOf="@+id/aipitching_feedback_imageView3"
         app:layout_constraintTop_toBottomOf="@+id/aipitching_feedback_imageView2" />
 
+
+    <ImageView
+        android:id="@+id/aipitching_feedback_imageView4"
+        android:layout_width="363dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/aipitching_performanceanalysis_greybox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aipitching_feedback_text4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="fill_horizontal"
+        android:lineSpacingExtra="5dp"
+        android:text="The call's opening would have been more effective if \nthe sales representtive
+introduced themsolves, like \nsaying [Hello, this is alex from XYZ company, how can \n
+I assist you today?]
+\nFurthermore, when the customer mentioned names \nlike Tom and Anna, there was opportunity for \n
+improvement. This sales rep could have clarified by \nexplicitly identifying who Tom and Anna are in the
+"
+        app:layout_constraintEnd_toEndOf="@+id/aipitching_feedback_imageView4"
+        app:layout_constraintStart_toStartOf="@+id/aipitching_feedback_imageView4"
+        app:layout_constraintTop_toTopOf="@+id/aipitching_feedback_imageView4" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
@@ -120,6 +150,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation" />
+        app:menu="@menu/bottom_navigation" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,32 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="deploymentTargetDropDown">
-    <value>
-
-      <entry key="app">
-
-      <entry key="aipitching_permission">
-
-        <State />
-      </entry>
-      <entry key="learning_resources_quiz_start">
-        <State />
-      </entry>
-      <entry key="resources_enroll_page">
-        <State />
-      </entry>
-      <entry key="dashboard_overview">
-        <State />
-      </entry>
-      <entry key="login">
-        <State />
-      </entry>
-      <entry key="login (1)">
-        <State />
-      </entry>
-      <entry key="login2">
-        <State />
-      </entry>
-    </value>
+    <targetSelectedWithDropDown>
+      <Target>
+        <type value="QUICK_BOOT_TARGET" />
+        <deviceKey>
+          <Key>
+            <type value="VIRTUAL_DEVICE_PATH" />
+            <value value="C:\Users\Alvin Tang\.android\avd\Pixel_5_API_34_2.avd" />
+          </Key>
+        </deviceKey>
+      </Target>
+    </targetSelectedWithDropDown>
+    <timeTargetWasSelectedWithDropDown value="2024-07-02T08:34:50.765588700Z" />
   </component>
 </project>
