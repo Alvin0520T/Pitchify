@@ -2,10 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.pitchify_main">
 
+
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
 
     <application
@@ -13,30 +15,33 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="Pitchify"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pitchify_Main"
         tools:targetApi="31">
 
-        <!-- Set aipitching_task as the main launcher activity -->
         <activity
+
             android:name=".aipitching_screens.aipitching_training"
+
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
-
         <activity
-            android:name=".login_screens.login"
-            android:exported="false"
-            android:theme="@style/Theme.Pitchify_Main" />
 
-        <!-- Other Activities -->
+            android:name=".resource_screens.learning_resources_starting_page"
+
+            android:exported="true">
+
+
+        </activity>
 
         <activity android:name=".ChatActivity" />
 
@@ -44,22 +49,22 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"
+
             android:theme="@style/Theme.Pitchify_Main"/>
+
+
 
         <activity
             android:name=".resource_screens.filter_resources"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
 
+
         <activity
             android:name=".resource_screens.resources_enroll_page"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
 
-        <activity
-            android:name=".resource_screens.learning_resources_starting_page"
-            android:exported="false"
-            android:theme="@style/Theme.Pitchify_Main"/>
 
         <activity
             android:name=".resource_screens.learning_resources_quiz_start"
@@ -79,7 +84,16 @@
         <activity
             android:name=".resource_screens.learning_resources_quiz_four"
             android:exported="true"
-            android:theme="@style/Theme.Pitchify_Main" />
+            android:theme="@style/Theme.Pitchify_Main">
+
+
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
 
         <activity android:name=".dashboard_screens.dashboard_ongoing"
             android:exported="false"
@@ -100,6 +114,7 @@
         <activity android:name=".dashboard_screens.badge_view"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main"/>
+
 
         <activity
             android:name=".login_screens.login2"
@@ -135,9 +150,8 @@
             android:name=".login_screens.admin_profile"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main" />
-
-
-        <activity
+      
+      <activity
             android:name=".dashboard_screens.dashboard_overview"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main" />
@@ -157,10 +171,15 @@
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main" />
 
+
+
         <activity
-            android:name=".resource_screens.resources_training"
-            android:exported="false"
-            android:theme="@style/Theme.Pitchify_Main" />
+        android:name=".resource_screens.resources_training"
+        android:exported="false"
+        android:theme="@style/Theme.Pitchify_Main" />
+
+
+
 
     </application>
 </manifest>

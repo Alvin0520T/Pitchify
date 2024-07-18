@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Pitching"
+    android:background="#E1FBFF">
+
+    <ImageButton
+        android:id="@+id/aipitching_feedback_backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:src="@drawable/aipitching_left_icon" />
+
+    <Button
+        android:id="@+id/button_upload_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload .txt File" />
+
+    <Button
+        android:id="@+id/button_upload_rubric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Rubric File" />
+
+    <TextView
+        android:id="@+id/textView_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Feedback will appear here"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
+
+
+
+
+

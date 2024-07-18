@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.aipitching_performance);
         setContentView(R.layout.login);
         setContentView(R.layout.learning_resources_starting_page);
