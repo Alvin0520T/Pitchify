@@ -4,7 +4,8 @@
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 
     <application
@@ -20,7 +21,7 @@
 
         <!-- Set aipitching_task as the main launcher activity -->
         <activity
-            android:name=".aipitching_screens.aipitching_performance"
+            android:name=".aipitching_screens.aipitching_training"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main">
             <intent-filter>
@@ -29,12 +30,17 @@
             </intent-filter>
         </activity>
 
+
         <activity
             android:name=".login_screens.login"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/Theme.Pitchify_Main" />
 
         <!-- Other Activities -->
+
+        <activity android:name=".ChatActivity" />
+
+        <!-- Activities -->
         <activity
             android:name=".MainActivity"
             android:exported="false"
@@ -158,4 +164,3 @@
 
     </application>
 </manifest>
-

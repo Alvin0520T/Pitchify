@@ -5,20 +5,20 @@
     <item
         android:id="@+id/nav1"
         android:icon="@drawable/book_icon"
-        android:title="resources" />
+        android:title="Resources" />
 
     <item
         android:id="@+id/nav2"
         android:icon="@drawable/chart_icon"
-        android:title="dashboard" />
+        android:title="Dashboard" />
 
     <item
         android:id="@+id/nav3"
         android:icon="@drawable/aipitching_icon"
-        android:title="pitching" />
+        android:title="Pitching" />
 
     <item
         android:id="@+id/nav4"
         android:icon="@drawable/profile_icon"
-        android:title="profile" />
+        android:title="Profile" />
 </menu>
