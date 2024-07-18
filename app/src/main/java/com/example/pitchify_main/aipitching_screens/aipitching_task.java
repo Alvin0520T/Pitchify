@@ -19,19 +19,22 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class aipitching_task extends AppCompatActivity {
 
-    @SuppressLint("NonConstantResourceId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aipitching_task);
 
+
+
         ImageView startbutton = findViewById(R.id.startbutton);
 
-        // Set OnClickListener for the start button (ImageView)
+
+
+
         startbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle button click, navigate to aipitching_permission activity
                 Intent intent = new Intent(aipitching_task.this, aipitching_permission.class);
                 startActivity(intent);
             }

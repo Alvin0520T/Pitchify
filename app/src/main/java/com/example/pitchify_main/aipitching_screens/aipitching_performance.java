@@ -15,6 +15,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import com.example.pitchify_main.R;
 import com.example.pitchify_main.data.PitchifyDBHelper;
@@ -30,7 +32,7 @@ public class aipitching_performance extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.aipitching_performance); // Ensure this matches your XML file name
+        setContentView(R.layout.aipitching_performance);
 
         btnRecord = findViewById(R.id.btnRecord);
         tvTranscript = findViewById(R.id.tvTranscript);
@@ -98,6 +100,9 @@ public class aipitching_performance extends AppCompatActivity {
                     PitchifyDBHelper dbHelper = new PitchifyDBHelper(aipitching_performance.this);
                     dbHelper.updateTranscript(transcript);
 
+                    // Save the transcript to a file
+                    saveTranscriptToFile(transcript);
+
                     // Display the updated transcripts
                     displayTranscripts();
                 }
@@ -149,6 +154,16 @@ public class aipitching_performance extends AppCompatActivity {
         }
 
         tvTranscript.setText(sb.toString());
+    }
+
+    private void saveTranscriptToFile(String transcript) {
+        String fileName = "transcripts.txt";
+        try (FileOutputStream fos = openFileOutput(fileName, MODE_APPEND)) {
+            fos.write((transcript + "\n").getBytes());
+            Log.d("File Writing", "Transcript written to file successfully");
+        } catch (IOException e) {
+            Log.e("File Writing Error", "Error writing to file: " + e.getMessage());
+        }
     }
 
     @Override
