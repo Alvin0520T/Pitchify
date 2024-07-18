@@ -78,4 +78,7 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    implementation ("com.squareup.okhttp3:okhttp:4.9.3")
+    implementation ("com.tom-roush:pdfbox-android:2.0.27.0")
 }
