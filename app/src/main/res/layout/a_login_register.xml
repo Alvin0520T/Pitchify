@@ -24,17 +24,17 @@
         android:id="@+id/admin_login_register_logo_image"
         android:layout_width="247dp"
         android:layout_height="292dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="7dp"
         android:src="@drawable/login_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/admin_login_register_pitchify_image" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_login_register_pitchify_image" />
 
     <ImageView
         android:id="@+id/admin_login_register_pitchify_image"
         android:layout_width="298dp"
         android:layout_height="129dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/a_login_pitchify"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -46,38 +46,36 @@
         android:id="@+id/admin_login_register_login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:src="@drawable/login_button"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.724"
+        app:layout_constraintTop_toBottomOf="@+id/admin_login_register_logo_image"
         tools:layout_editor_absoluyteX="82dp" />
 
     <ImageView
         android:id="@+id/admin_login_register_register_button"
         android:layout_width="332dp"
         android:layout_height="63dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/a_login_register_button"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.83"
+        app:layout_constraintTop_toBottomOf="@+id/admin_login_register_login_button"
         tools:layout_editor_absoluyteX="82dp" />
 
     <ImageView
         android:id="@+id/admin_login_register_terms_condition"
         android:layout_width="229dp"
         android:layout_height="30dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/login_terms_condition"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.904"
+        app:layout_constraintTop_toBottomOf="@+id/admin_login_register_register_button"
         tools:layout_editor_absoluyteX="82dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

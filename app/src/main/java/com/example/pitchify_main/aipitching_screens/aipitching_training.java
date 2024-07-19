@@ -11,6 +11,7 @@ import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,14 +26,20 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Locale;
+
+import com.example.pitchify_main.Pitching;
 import com.example.pitchify_main.R;
+import com.example.pitchify_main.dashboard_screens.dashboard_overview;
+import com.example.pitchify_main.dashboard_screens.staff_profile;
 import com.example.pitchify_main.data.PitchifyDBHelper;
+import com.example.pitchify_main.resource_screens.resources_training;
 
 public class aipitching_training extends AppCompatActivity {
 
     private static final int REQUEST_RECORD_AUDIO_PERMISSION_CODE = 1;
     private static final int REQUEST_STORAGE_PERMISSION_CODE = 2;
-    private Button btnRecord;
+    private Button btnRecord,feedbackButton;
+
     private TextView tvTranscript;
     private SpeechRecognizer speechRecognizer;
     private TextToSpeech textToSpeech;
@@ -44,7 +51,12 @@ public class aipitching_training extends AppCompatActivity {
         setContentView(R.layout.aipitching_performance); // Ensure this matches your XML file name
 
         btnRecord = findViewById(R.id.btnRecord);
+        feedbackButton = findViewById(R.id.feedbackbutton1);
         tvTranscript = findViewById(R.id.tvTranscript);
+        ImageView navigation1 = findViewById(R.id.nav_1);
+        ImageView navigation2 = findViewById(R.id.nav_2);
+        ImageView navigation3 = findViewById(R.id.nav_3);
+        ImageView navigation4 = findViewById(R.id.nav_4);
 
         // Request audio recording permission
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
@@ -81,6 +93,47 @@ public class aipitching_training extends AppCompatActivity {
                 }
             }
         });
+
+        feedbackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(aipitching_training.this, Pitching.class);
+                startActivity(intent);
+            }
+        });
+
+        navigation1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(aipitching_training.this, resources_training.class);
+                startActivity(intent);
+            }
+        });
+
+        navigation2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(aipitching_training.this, dashboard_overview.class);
+                startActivity(intent);
+            }
+        });
+
+        navigation3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(aipitching_training.this, aipitching_task.class);
+                startActivity(intent);
+            }
+        });
+
+        navigation4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(aipitching_training.this, staff_profile.class);
+                startActivity(intent);
+            }
+        });
+
 
         // Display existing transcripts when the activity is created
         displayTranscripts();
@@ -318,4 +371,6 @@ public class aipitching_training extends AppCompatActivity {
             textToSpeech.shutdown();
         }
     }
+
+
 }

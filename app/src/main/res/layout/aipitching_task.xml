@@ -59,10 +59,10 @@
         android:id="@+id/startbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/aipitching_startbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/aipitching_task_text4" />
 
@@ -70,14 +70,14 @@
         android:id="@+id/aipitching_task_text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="22dp"
         android:text="Your task:"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aipitching_task_text2"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -93,11 +93,12 @@
         app:layout_constraintTop_toBottomOf="@+id/aipitching_task_text"
         tools:ignore="MissingConstraints" />
 
+
     <TextView
         android:id="@+id/aipitching_task_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="20dp"
         android:text="AI Pitching Simulation"
         android:textSize="23dp"
         android:textStyle="bold"
@@ -106,7 +107,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/aipitching_task_text1"
         tools:ignore="MissingConstraints" />
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

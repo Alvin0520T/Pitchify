@@ -10,6 +10,7 @@ import android.speech.SpeechRecognizer;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,13 +19,19 @@ import androidx.core.content.ContextCompat;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import com.example.pitchify_main.ChatActivity;
+import com.example.pitchify_main.MainActivity;
+import com.example.pitchify_main.Pitching;
 import com.example.pitchify_main.R;
+import com.example.pitchify_main.dashboard_screens.dashboard_completion;
+import com.example.pitchify_main.dashboard_screens.dashboard_overview;
 import com.example.pitchify_main.data.PitchifyDBHelper;
 
 public class aipitching_performance extends AppCompatActivity {
 
     private static final int REQUEST_RECORD_AUDIO_PERMISSION_CODE = 1;
-    private Button btnRecord;
+    private Button btnRecord, feedback_button;
     private TextView tvTranscript;
     private SpeechRecognizer speechRecognizer;
     private boolean isRecording = false;
@@ -35,6 +42,7 @@ public class aipitching_performance extends AppCompatActivity {
         setContentView(R.layout.aipitching_performance);
 
         btnRecord = findViewById(R.id.btnRecord);
+        feedback_button = findViewById(R.id.feedbackbutton1);
         tvTranscript = findViewById(R.id.tvTranscript);
 
         // Request audio recording permission
@@ -51,6 +59,13 @@ public class aipitching_performance extends AppCompatActivity {
                     startRecording();
                 }
             }
+        });
+
+        // Set OnClickListener for the feedback button
+        feedback_button.setOnClickListener(v -> {
+            // Navigate to Pitching activity
+            Intent intent = new Intent(aipitching_performance.this, Pitching.class);
+            startActivity(intent);
         });
 
         // Display existing transcripts when the activity is created

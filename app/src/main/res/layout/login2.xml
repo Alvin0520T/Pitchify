@@ -8,20 +8,22 @@
     tools:ignore="ExtraText">
 
     <!-- login2 button -->
+
+    <!-- arrow back button -->
     <ImageView
         android:id="@+id/login2_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
         android:src="@drawable/login_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396"
+        app:layout_constraintTop_toBottomOf="@+id/password_cardView"
+        app:layout_constraintVertical_bias="0.019"
         tools:layout_editor_absoluyteX="82dp" />
 
-    <!-- arrow back button -->
     <ImageView
         android:id="@+id/arrow_back_button"
         android:layout_width="wrap_content"
@@ -82,6 +84,7 @@
         android:id="@+id/password_cardView"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
+        android:paddingTop="20dp"
         app:cardBackgroundColor="#FFFFFF"
         app:cardCornerRadius="10dp"
         app:cardElevation="0dp"
