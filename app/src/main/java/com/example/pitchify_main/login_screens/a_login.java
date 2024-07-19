@@ -9,6 +9,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pitchify_main.R;
+import com.example.pitchify_main.admin_staffoverviewperformance.admin_staffoverviewperformance_row;
+import com.example.pitchify_main.dashboard_screens.dashboard_overview;
 import com.example.pitchify_main.data.MPitchifyDBHelper;
 import com.example.pitchify_main.model.User;
 
@@ -65,7 +67,7 @@ public class a_login extends AppCompatActivity {
         if (admin != null && password.equals(admin.getPassword())) {
             Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show();
             // Proceed to the admin dashboard or next activity
-            Intent intent = new Intent(a_login.this, admin_profile.class);
+            Intent intent = new Intent(a_login.this, admin_staffoverviewperformance_row.class);
             startActivity(intent);
             finish(); // Optionally, finish this activity to prevent going back to it from the admin_profile
         } else {

@@ -60,6 +60,11 @@
             android:theme="@style/Theme.Pitchify_Main"/>
 
         <activity
+            android:name=".admin_staffoverviewperformance.admin_profile2"
+            android:exported="true"
+            android:theme="@style/Theme.Pitchify_Main"/>
+
+        <activity
             android:name=".dashboard_screens.onboarding2"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
@@ -182,7 +187,12 @@
             android:name=".login_screens.admin_profile"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main" />
-      
+
+        <activity
+            android:name=".admin_staffoverviewperformance.admin_staffoverviewperformance_row"
+            android:exported="false"
+            android:theme="@style/Theme.Pitchify_Main" />
+
       <activity
             android:name=".dashboard_screens.dashboard_overview"
             android:exported="false"
