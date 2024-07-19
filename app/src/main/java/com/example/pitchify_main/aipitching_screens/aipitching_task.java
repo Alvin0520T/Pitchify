@@ -35,7 +35,7 @@ public class aipitching_task extends AppCompatActivity {
         startbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(aipitching_task.this, aipitching_permission.class);
+                Intent intent = new Intent(aipitching_task.this, aipitching_training.class);
                 startActivity(intent);
             }
         });

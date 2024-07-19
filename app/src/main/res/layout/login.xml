@@ -12,18 +12,25 @@
         android:id="@+id/login_logo_image"
         android:layout_width="247dp"
         android:layout_height="292dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="23dp"
         android:src="@drawable/login_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/login_pitchify_image" />
+        app:layout_constraintTop_toBottomOf="@+id/login_pitchify_image" />
 
     <!-- Pitchify (bolttech) -->
+
+    <!-- login button -->
+
+    <!-- are you retail manager? -->
+
+    <!-- terms & condition -->
+
     <ImageView
         android:id="@+id/login_pitchify_image"
         android:layout_width="298dp"
         android:layout_height="129dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="28dp"
         android:src="@drawable/login_pitchify"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -31,23 +38,18 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluyteX="82dp" />
 
-    <!-- login button -->
-
-    <!-- are you retail manager? -->
     <ImageView
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:src="@drawable/login_button"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.747"
+        app:layout_constraintTop_toBottomOf="@+id/login_logo_image"
         tools:layout_editor_absoluyteX="82dp" />
 
-    <!-- terms & condition -->
     <ImageView
         android:id="@+id/ru_retail_manager"
         android:layout_width="229dp"
@@ -56,8 +58,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.817"
+        app:layout_constraintTop_toBottomOf="@+id/login_button"
+        app:layout_constraintVertical_bias="0.07"
         tools:layout_editor_absoluyteX="82dp" />
 
     <ImageView
@@ -68,8 +70,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893"
+        app:layout_constraintTop_toBottomOf="@+id/ru_retail_manager"
+        app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluyteX="82dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

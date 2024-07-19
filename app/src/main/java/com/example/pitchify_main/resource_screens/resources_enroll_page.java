@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.pitchify_main.ChatActivity;
 import com.example.pitchify_main.R;
 
 public class resources_enroll_page extends AppCompatActivity {
@@ -24,7 +25,7 @@ public class resources_enroll_page extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Handle button click, navigate to Login2Activity
-                Intent intent = new Intent(resources_enroll_page.this, learning_resources_starting_page.class);
+                Intent intent = new Intent(resources_enroll_page.this, ChatActivity.class);
                 startActivity(intent);
             }
 

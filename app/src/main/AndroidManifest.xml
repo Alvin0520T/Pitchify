@@ -23,7 +23,7 @@
 
         <activity
 
-            android:name=".aipitching_screens.aipitching_training"
+            android:name=".dashboard_screens.onboarding1"
 
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main">
@@ -56,6 +56,31 @@
 
         <activity
             android:name=".resource_screens.filter_resources"
+            android:exported="true"
+            android:theme="@style/Theme.Pitchify_Main"/>
+
+        <activity
+            android:name=".dashboard_screens.onboarding2"
+            android:exported="true"
+            android:theme="@style/Theme.Pitchify_Main"/>
+
+        <activity
+            android:name=".dashboard_screens.onboarding3"
+            android:exported="true"
+            android:theme="@style/Theme.Pitchify_Main"/>
+
+        <activity
+            android:name=".dashboard_screens.onboarding4"
+            android:exported="true"
+            android:theme="@style/Theme.Pitchify_Main"/>
+
+        <activity
+            android:name=".dashboard_screens.onboarding5"
+            android:exported="true"
+            android:theme="@style/Theme.Pitchify_Main"/>
+
+        <activity
+            android:name=".aipitching_screens.aipitching_training"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
 
@@ -94,6 +119,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Pitching" />
+
 
         <activity android:name=".dashboard_screens.dashboard_ongoing"
             android:exported="false"
@@ -114,6 +141,11 @@
         <activity android:name=".dashboard_screens.badge_view"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main"/>
+
+        <activity
+            android:name=".login_screens.login"
+            android:exported="false"
+            android:theme="@style/Theme.Pitchify_Main" />
 
 
         <activity
@@ -168,6 +200,16 @@
 
         <activity
             android:name=".aipitching_screens.aipitching_permission"
+            android:exported="false"
+            android:theme="@style/Theme.Pitchify_Main" />
+
+        <activity
+            android:name=".aipitching_screens.aipitching_performance"
+            android:exported="false"
+            android:theme="@style/Theme.Pitchify_Main" />
+
+        <activity
+            android:name=".aipitching_screens.aipitching_task"
             android:exported="false"
             android:theme="@style/Theme.Pitchify_Main" />
 
