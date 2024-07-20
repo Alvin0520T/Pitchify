@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1FBFF"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="32dp">
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:src="@drawable/aipitching_left_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/staff_performance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Staff Performance"
+        android:textColor="#101828"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Alvin Tang"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_profile" />
+
+    <ImageView
+        android:id="@+id/dashboard_profile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/staff_performance"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dashboard_imageView1"
+        android:layout_width="354dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/content_dashboard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNameTextView"
+        app:layout_constraintVertical_bias="0.07"></ImageView>
+
+    <TextView
+        android:id="@+id/dashboard_pitch_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI Simulation Pitching Score"
+        android:textColor="#343434"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView1"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView1"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView1"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView1"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <TextView
+        android:id="@+id/dashboard_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="63%"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView1"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView1"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView1"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView1"
+        app:layout_constraintVertical_bias="0.426" />
+
+
+    <ImageView
+        android:id="@+id/dashboard_imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_dashboard2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555"></ImageView>
+
+    <TextView
+        android:id="@+id/dashboard_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Badges"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView2"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView2"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView2"
+        app:layout_constraintVertical_bias="0.102" />
+
+
+    <ImageView
+        android:id="@+id/dashboard_imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_dashboard2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555"></ImageView>
+
+    <TextView
+        android:id="@+id/dashboard_talk_ratio_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="46%"
+        android:textColor="#000000"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView3"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView3"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView3"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <TextView
+        android:id="@+id/dashboard_talk_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/talk_ratio"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView3"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView3"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView3"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <ImageView
+        android:id="@+id/dashboard_imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_dashboard2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854"></ImageView>
+
+    <TextView
+        android:id="@+id/dashboard_interactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interactivity"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView4"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView4"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView4"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <TextView
+        android:id="@+id/dashboard_interactivity_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="55%"
+        android:textColor="#000000"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView4"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView4"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView4"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <ImageView
+        android:id="@+id/dashboard_imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_dashboard2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854"></ImageView>
+
+    <TextView
+        android:id="@+id/dashboard_patience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patience"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView5"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView5"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView5"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <TextView
+        android:id="@+id/dashboard_patience_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="78%"
+        android:textColor="#000000"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView5"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView5"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView5"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <ImageView
+        android:id="@+id/dashboard_badge1"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dashboard_badge6"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView2"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView2"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView2"
+        app:layout_constraintVertical_bias="0.39"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dashboard_badge2"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dashboard_badge5"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView2"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView2"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView2"
+        app:layout_constraintVertical_bias="0.39"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dashboard_badge3"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dashboard_badge4"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView2"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView2"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView2"
+        app:layout_constraintVertical_bias="0.918"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dashboard_badge4"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dashboard_badge3"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView2"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView2"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView2"
+        app:layout_constraintVertical_bias="0.39"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dashboard_badge5"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dashboard_badge2"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView2"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView2"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView2"
+        app:layout_constraintVertical_bias="0.918"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dashboard_badge6"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dashboard_badge1"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/dashboard_imageView2"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_imageView2"
+        app:layout_constraintTop_toTopOf="@+id/dashboard_imageView2"
+        app:layout_constraintVertical_bias="0.918"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

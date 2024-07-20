@@ -70,6 +70,11 @@
             android:theme="@style/Theme.Pitchify_Main"/>
 
         <activity
+            android:name=".admin_staffoverviewperformance.staff_performance"
+            android:exported="true"
+            android:theme="@style/Theme.Pitchify_Main"/>
+
+        <activity
             android:name=".dashboard_screens.onboarding3"
             android:exported="true"
             android:theme="@style/Theme.Pitchify_Main"/>
