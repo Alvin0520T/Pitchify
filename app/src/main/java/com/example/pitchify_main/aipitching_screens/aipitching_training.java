@@ -38,7 +38,7 @@ public class aipitching_training extends AppCompatActivity {
 
     private static final int REQUEST_RECORD_AUDIO_PERMISSION_CODE = 1;
     private static final int REQUEST_STORAGE_PERMISSION_CODE = 2;
-    private Button btnRecord,feedbackButton;
+    private Button btnRecord, feedbackButton;
 
     private TextView tvTranscript;
     private SpeechRecognizer speechRecognizer;
@@ -134,7 +134,6 @@ public class aipitching_training extends AppCompatActivity {
             }
         });
 
-
         // Display existing transcripts when the activity is created
         displayTranscripts();
     }
@@ -178,86 +177,42 @@ public class aipitching_training extends AppCompatActivity {
                 if (matches != null) {
                     String transcript = matches.get(0);
 
-                    // Check for specific keywords and respond
-                    if (transcript.toLowerCase().contains("hello")) {
-                        String reply = "Good day to you!";
+                    // Check for specific keywords and respond with Chris's conversation
+                    if (transcript.toLowerCase().contains("afternoon")) {
+                        String reply = "Hi! I'm interested in buying a drone. I’ve heard a lot about them and I’m quite fascinated by the idea. Can you tell me more about them?";
                         textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("would")) {
-                        String reply = "Yes, I would like to have one, how much is it?";
+                    } else if (transcript.toLowerCase().contains("using a drone")) {
+                        String reply = "I’m mainly interested in aerial photography and videography. I love capturing landscapes and I think a drone would add a whole new dimension to my shots.";
                         textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("ringgit")) {
-                        String reply = "Alright, thank you very much. I would like to have one";
+                    } else if (transcript.toLowerCase().contains("starting")) {
+                        String reply = "No, I’m a complete beginner.";
                         textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("buy")) {
-                        String reply = "Yes, I would like to have one, how much is it?";
+                    } else if (transcript.toLowerCase().contains("beginner")) {
+                        String reply = "Sounds perfect! What’s the camera quality like?";
                         textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("question")) {
-                        String reply = "Yes, I would like to ask how much is the shipping";
+                    } else if (transcript.toLowerCase().contains("4k")) {
+                        String reply = "That sounds impressive. What about the flight time? How long can it stay in the air?";
                         textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("questions")) {
-                        String reply = "Yes, I would like to ask how much is the shipping";
+                    } else if (transcript.toLowerCase().contains("minutes")) {
+                        String reply = "That’s reassuring. How easy is it to control?";
                         textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("shipping")) {
-                        String reply = "Is there any warranty?";
+                    } else if (transcript.toLowerCase().contains("direction")) {
+                        String reply = "That sounds like exactly what I need. What’s the price?";
                         textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("warranty")) {
-                        String reply = "Alright, thank you very much. Have a nice day!";
+                    } else if (transcript.toLowerCase().contains("greater")) {
+                        String reply = "I think I’ll go with the bundle. The extra batteries and carrying case will definitely come in handy.";
                         textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("price")) {
-                        String reply = "Our prices are very competitive.";
+                    } else if (transcript.toLowerCase().contains("landing")) {
+                        String reply = "I’ll take a memory card as well, just to make sure I have enough storage.";
                         textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("feature")) {
-                        String reply = "Our product has several unique features that set it apart.";
+                    } else if (transcript.toLowerCase().contains("space")) {
+                        String reply = "That’s all for now. Thank you so much for your help!";
                         textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("benefit")) {
-                        String reply = "This product offers many benefits, including efficiency and cost savings.";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("support")) {
-                        String reply = "We provide 24/7 support for all our customers.";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("demo")) {
-                        String reply = "We can arrange a demo to showcase the product.";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("discount")) {
-                        String reply = "We offer various discounts and promotions.";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("guarantee")) {
-                        String reply = "We provide a satisfaction guarantee.";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("delivery")) {
-                        String reply = "We offer fast and reliable delivery options.";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("product")) {
-                        String reply = "Our product is known for its high quality and reliability.";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("availability")) {
-                        String reply = "This product is currently in stock and available for purchase.";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("return")) {
-                        String reply = "We have a flexible return policy. Would you like more details?";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("exchange")) {
-                        String reply = "We offer exchanges within 30 days of purchase.";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("quality")) {
-                        String reply = "We maintain high quality standards for all our products.";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("materials")) {
-                        String reply = "Our products are made from premium materials.";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("cost")) {
-                        String reply = "The cost is very reasonable for the value it provides.";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("specifications")) {
-                        String reply = "Here are the specifications: [details]. Would you like more information?";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("usage")) {
-                        String reply = "This product is easy to use. Do you need a demonstration?";
-                        textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
-                    } else if (transcript.toLowerCase().contains("testimonials")) {
-                        String reply = "Our customers have given us great feedback.";
+                    } else if (transcript.toLowerCase().contains("confident")) {
+                        String reply = "Thank you! I’m excited to get started.";
                         textToSpeech.speak(reply, TextToSpeech.QUEUE_FLUSH, null, null);
                     }
+
 
                     // Save the transcript in the database
                     PitchifyDBHelper dbHelper = new PitchifyDBHelper(aipitching_training.this);

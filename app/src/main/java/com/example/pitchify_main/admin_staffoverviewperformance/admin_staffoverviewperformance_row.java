@@ -10,11 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.pitchify_main.R;
-import com.example.pitchify_main.dashboard_screens.onboarding3;
-import com.example.pitchify_main.dashboard_screens.onboarding4;
 import com.example.pitchify_main.data.CustomAdapter;
 import com.example.pitchify_main.data.PitchifyDBHelper;
 import com.example.pitchify_main.model.User;
+
 import java.util.ArrayList;
 
 public class admin_staffoverviewperformance_row extends AppCompatActivity {
@@ -34,7 +33,6 @@ public class admin_staffoverviewperformance_row extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(admin_staffoverviewperformance_row.this, admin_profile2.class);
                 startActivity(intent);
-
             }
         });
 
