@@ -85,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="You are a sales rep for a software company, \nand you are trying to sell your product to a \n potential customer. "
+        android:text="You are a sales rep for a drone selling company, \nand you are trying to sell your product to a \n potential customer. "
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
