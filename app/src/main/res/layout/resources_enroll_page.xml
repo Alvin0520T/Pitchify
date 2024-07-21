@@ -35,7 +35,7 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/knowledge_training"
-        app:srcCompat="@drawable/learning_resources_content" />
+        app:srcCompat="@drawable/frame34" />
 
     <ImageView
         android:id="@+id/imageView18"

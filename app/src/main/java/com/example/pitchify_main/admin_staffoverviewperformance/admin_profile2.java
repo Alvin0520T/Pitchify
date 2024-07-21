@@ -24,7 +24,7 @@ public class admin_profile2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.a_register);
+        setContentView(R.layout.admin_profile2);
 
         dbHelper = new PitchifyDBHelper(this);
         firstNameEditText = findViewById(R.id.admin_register_enter_first_name);

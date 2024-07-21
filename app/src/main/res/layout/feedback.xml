@@ -27,7 +27,7 @@
             android:layout_width="165dp"
             android:layout_height="wrap_content"
             android:background="#0A49C3"
-            android:text="Upload .txt File"
+            android:text="Upload transcript.txt File"
             android:textColor="#FFFFFF"
             android:padding="12dp"
             android:layout_marginEnd="16dp" />
